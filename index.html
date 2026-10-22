@@ -3,100 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>タキ ★ スポ2025　</title>
+  <title>スポーツ大会2026</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
       font-family: 'Yusei Magic', sans-serif;
-      background: linear-gradient(to bottom, #fff7c2, #ffe3e3);
+      background: linear-gradient(to bottom, #fff7c2, #e3f2fd);
       color: #333;
     }
+
     header {
-      background: #ff6666;
+      background: #3949ab;
       color: white;
       padding: 2rem;
       text-align: center;
+      border-radius: 0 0 1.5rem 1.5rem;
     }
+
     header h1 {
       margin: 0;
       font-size: 3rem;
     }
+
     .section {
       padding: 2rem;
     }
+
     .info {
       background: #fff8e7;
       border-radius: 1rem;
       padding: 1.5rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+
     .info h2 {
       margin-top: 0;
-      color: #ff6666;
+      color: #3949ab;
     }
-    .events, .teams {
+
+    .events {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       margin-top: 1rem;
     }
-    .event, .team {
+
+    .event {
       flex: 1 1 150px;
       background: white;
       border-radius: 1rem;
       padding: 1rem;
       text-align: center;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+      font-size: 1.1rem;
     }
-    .team.red { background-color: #ffcccc; }
-    .team.blue { background-color: #cce5ff; }
-    .team.green { background-color: #d5f5e3; }
-    .team.yellow { background-color: #fff9c4; }
+
+    .event .emoji {
+      display: block;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .message {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .message .main-message {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #3949ab;
+    }
+
+    .message .sub-message {
+      font-size: 1.1rem;
+    }
+
     footer {
-      background: #ff6666;
+      background: #3949ab;
       color: white;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
     }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .section {
+        padding: 1rem;
+      }
+
+      .message .main-message {
+        font-size: 1.2rem;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <header>
-    <h1>🎉 タキスポ2025 🎉</h1>
-    <p>テーマ：<strong>熱い声援をPowerに変えて！Victory Roadを突き進め！</strong></p>
+    <h1>🎉 タキスポ2026 🎉</h1>
+    <p>
+      テーマ：
+      <strong>熱い声援をPowerに変えて！Victory Roadを突き進め！</strong>
+    </p>
   </header>
 
   <section class="section info">
     <h2>📅 開催情報</h2>
-    <p><strong>日時：</strong>2025年7月2日（水）9:00～16:00</p>
-    <p><strong>場所：</strong>千葉総合体育館 YOHASアリーナ メインアリーナ</p>
+    <p><strong>日時：</strong>2026年7月4日（土）9:00～16:00</p>
+    <p><strong>場所：</strong>千葉ポートアリーナ</p>
   </section>
 
   <section class="section">
     <h2>🏅 種目</h2>
+
     <div class="events">
-      <div class="event">🎯 わなげ</div>
-      <div class="event">⛓️ 大縄跳び</div>
-      <div class="event">🔥 ドッジボール</div>
-      <div class="event">🪢 十字綱引き</div>
-      <div class="event">🏃‍♂️ リレー</div>
+
+      <div class="event">
+        <span class="emoji">🏐</span>
+        大玉転がし
+      </div>
+
+      <div class="event">
+        <span class="emoji">🏀</span>
+        玉入れ
+      </div>
+
+      <div class="event">
+        <span class="emoji">🧠</span>
+        クイズ大会
+      </div>
+
+      <div class="event">
+        <span class="emoji">💪</span>
+        綱引き
+      </div>
+
+      <div class="event">
+        <span class="emoji">🏃‍♂️</span>
+        リレー
+      </div>
+
     </div>
   </section>
 
   <section class="section">
-    <h2>🚩 対戦チーム</h2>
-    <div class="teams">
-      <div class="team red">❤️ 赤チーム</div>
-      <div class="team blue">💙 青チーム</div>
-      <div class="team green">💚 緑チーム</div>
-      <div class="team yellow">💛 黄チーム</div>
+    <h2>🏫 クラス対抗</h2>
+
+    <div class="message">
+      <p class="main-message">
+        各クラスが誇りを胸に戦う！
+      </p>
+
+      <p class="sub-message">
+        仲間と力を合わせ、勝利をつかめ！
+      </p>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 タキスポ実行委員会</p>
+    <p>© 2026 タキスポ実行委員会</p>
   </footer>
+
 </body>
 </html>
